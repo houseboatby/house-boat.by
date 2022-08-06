@@ -520,7 +520,7 @@ html {
 ====================*/
 
 .brings {
-	min-height: 640px;
+	min-height: 500px;
 	background: linear-gradient(to right, #e3eeed 50%, #214e41 50%, #214e41 100%);
 }
 
@@ -528,6 +528,7 @@ html {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 70px 0 70px 0;
 }
 
 .brings__item {
@@ -926,7 +927,7 @@ html {
 
 .employers {
 	min-height: 740px;
-	background: url("../img/employers/watter.jpg") center / cover no-repeat;
+	background: url("../img/hb.jpg") center / cover no-repeat;
 }
 
 .employers__item {
@@ -1241,6 +1242,11 @@ html {
 		margin: 0px 0px 20px 0px;
 		font-size: 20px;
 	}
+}
+
+.intro-last{
+	min-height: 800px;
+	background: url("../img/hbo.jpg") center/cover no-repeat;
 }
 
 /* Footer
