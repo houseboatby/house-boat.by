@@ -235,7 +235,7 @@ html {
 
 .intro {
 	min-height: 720px;
-	background: url("../img/main.jpg") center/cover no-repeat;
+	background: url("../img/085549.jpg") center/cover no-repeat;
 }
 
 .intro__content {
@@ -244,7 +244,7 @@ html {
 
 .intro__title {
 	margin: 0px 0px 42px 0px;
-	max-width: 516px;
+	max-width: 616px;
 }
 
 .title {
