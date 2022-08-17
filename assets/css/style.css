@@ -236,6 +236,7 @@ html {
 .intro {
 	min-height: 720px;
 	background: url("../img/085549.jpg") center/cover no-repeat;
+	max-width: 100%;
 }
 
 .intro__content {
@@ -410,7 +411,7 @@ html {
 
 .why__item {
 	max-width: 470px;
-	margin: 0px 0px 60px 60px;
+	margin: 0px 0px 60px 0px;
 }
 
 .why__question {
@@ -471,7 +472,7 @@ html {
 }
 
 .why__image {
-	margin: 0px 0px 0px 20px;
+	margin: 0px 0px 50px 85px;
 }
 
 .why__img {
@@ -527,15 +528,24 @@ html {
 .brings__row {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding: 70px 0 70px 0;
+	align-items: flex-start;
+	/* padding: 70px 0 70px 0; */
+}
+.brings__prise{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 70px 0 0 0;
 }
 
 .brings__item {
 	width: 50%;
-	padding: 30px 0px 20px 0px;
+	padding: 90px 0px 30px 0px;
 }
-
+.brings__item-prise {
+	width: 50%;
+	padding: 0px 30px 0px 0px;
+}
 .brings__subtitle {
 	margin: 0px 0px 30px 0px;
 	color: #214e41;
@@ -556,7 +566,7 @@ html {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-weight: normal;
-	font-size: 30px;
+	font-size: 25px;
 	/* list-style: none; */
 }
 
@@ -607,6 +617,11 @@ html {
 }
 .brings__description:last-child {
 	margin: 0;
+}
+.brings__p{
+	color: #214e41;
+	font-size: 22px;
+	padding: 20px 0 0 0;
 }
 
 /* Media Brings
@@ -1276,7 +1291,7 @@ html {
 	display: flex;
 	justify-content: space-between;
 	padding: 100px 0px 50px 0px;
-	border-bottom: 1px solid #fff;
+	/* border-bottom: 1px solid #fff; */
 }
 
 .footer-top__item {
@@ -1447,6 +1462,25 @@ html {
 
 /* Media Footer
 ====================*/
+@media (max-width: 1200px) {
+	.footer-top{
+		justify-content: center;
+	}
+	.footer-top__item{
+	flex-direction: column;
+	}
+	.footer-contact{
+		margin:0px;
+		font-size: 50px;
+	}
+	.footer-ul {
+		padding: 0 40px 0 40px;
+	}
+	.footer-li{
+		font-size: 50px;
+	}
+}
+
 
 @media (max-width: 991.98px) {
 	.footer-top__join {
@@ -1457,11 +1491,21 @@ html {
 	.footer-top__company {
 		margin: 0px 0px 0px 35px;
 	}
+	.footer-top{
+		justify-content: center;
+	}
+	.footer-top__item{
+	flex-direction: column;
+	}
+	.footer-contact{
+		margin:0px;
+		font-size: 50px;
+	}
 }
 
 @media (max-width: 878.98px) {
 	.footer-top__item {
-		display: block;
+		flex-direction: column;
 	}
 
 	.footer-top__logo {
@@ -1498,3 +1542,13 @@ html {
 		margin: 0px 0px 15px 0px;
 	}
 }
+@media (max-width: 470px) {
+	.footer-contact{
+		margin:0px;
+		font-size: 30px;
+	}
+	.footer-li{
+		font-size: 30px;
+	}
+}
+
